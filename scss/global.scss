@@ -1,5 +1,24 @@
+@font-face {
+    font-family: 'Font_Logo';
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: 'Font_Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Font_Regular';
+    font-weight: 400;
+    background-color: white;
 }
