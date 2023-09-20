@@ -1,0 +1,241 @@
+@mixin testBorder($clr) {
+    border: 1px solid $clr;
+}
+
+$making__background_color: #ebebeb;
+$making__border_color: #dddddd;
+$making__cards__border_color: #c0c0c0;
+$making__h_color: #666666;
+$making__p_color: #85859b;
+
+// basiс elements setup
+.making {
+    max-width: 1440px;
+    min-width: 320px;
+    width: 100vw;
+    background-color: $making__background_color;
+    border: 1px solid $making__border_color;
+    border-top: none;
+    border-bottom: none;
+    // @include testBorder(pink);    
+}
+.making__cards {
+    // @include testBorder(green);    
+}
+.making__cards__h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $making__h_color;
+    // @include testBorder(green);
+}
+.making__cards__p {
+    font-size: 18px;
+    line-height: 27px;
+    color: $making__p_color;
+    // @include testBorder(green);
+}
+.making__cards__ico {
+    width: 160px;
+    height: 118px;
+    // @include testBorder(blue);
+}
+.making__cards__ico_v1 {
+    background-image: url('../ico/card_v1_big.png');
+}
+.making__cards__ico_v2 {
+    background-image: url('../ico/card_v2_big.png');
+}
+.making__cards__ico_v3 {
+    background-image: url('../ico/card_v3_big.png');
+}
+.making__folder__h2 {
+    font-size: 40px;
+    line-height: 40px;
+    color: $making__h_color;
+    // @include testBorder(green);
+}
+.making__folder__p {
+    font-size: 18px;
+    line-height: 30.6px;
+    color: $making__p_color;
+    // @include testBorder(green);
+}
+.making__folder__img {
+    width: 730px;
+    height: 564px;
+    background-image: url('../img/card_big.png');
+    // @include testBorder(blue);
+}
+
+// setup adaptive
+.making {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.making__cards {
+    width: 1110px;
+    height: 139px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.making__cards__v {
+    width: 350px;
+    height: 139px;
+    border-top: 1px solid $making__cards__border_color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.making__cards__ico {
+    align-self: end;
+}
+.making__cards__text {
+    align-self: center;
+    margin-top: 20px;
+}
+.making__folder {
+    width: 1110px;
+    height: 564px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.making__folder__text {
+    align-self: center;
+}
+.making__folder__h2 {
+    margin-bottom: 20px;
+}
+
+// begin adaptive
+@media (max-width: 1109px) {     // from 768px
+    .making__folder__h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .making__folder__img {
+        width: 330px;
+        height: 256px;
+        background-image: url('../img/card_middle.png');
+    }
+    .making__cards {
+        width: 690px;
+        height: 219px;
+        margin-top: 70px;
+    }
+    .making__cards__v {
+        width: 219px;
+        height: 210px;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+    }
+    .making__cards__ico {
+        margin-top: 20px;
+    }
+    .making__cards__text {
+        align-self: center;
+        margin-top: 0;
+    }
+    .making__folder {
+        width: 690px;
+        height: 431px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    .making__folder__h2 {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 679px) {     // 576px
+    .making__cards__h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .making__cards__p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .making__folder__h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .making__folder__p {
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+    .making__cards__ico {
+        width: 150px;
+        height: 111px;
+    }
+    .making__cards__ico_v1 {
+        background-image: url('../ico/card_v1_middle.png');
+    }
+    .making__cards__ico_v2 {
+        background-image: url('../ico/card_v2_middle.png');
+    }
+    .making__cards__ico_v3 {
+        background-image: url('../ico/card_v3_middle.png');
+    }
+    .making__cards {
+        width: 510px;
+        height: 203px;
+    }
+    .making__cards__v {
+        width: 150px;
+        height: 203px;
+    }
+    .making__folder {
+        width: 510px;
+        height: 512px;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+        column-gap: 0;
+        align-content: space-between;
+    }
+    .making__folder__h2 {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 509px) {     // from 320px
+    .making__cards__ico {
+        width: 130px;
+        height: 96px;
+    }
+    .making__cards__ico_v1 {
+        background-image: url('../ico/card_v1_small.png');
+    }
+    .making__cards__ico_v2 {
+        background-image: url('../ico/card_v2_small.png');
+    }
+    .making__cards__ico_v3 {
+        background-image: url('../ico/card_v3_small.png');
+    }
+    .making__folder__img {
+        width: 290px;
+        height: 223px;
+        background-image: url('../img/card_small.png');
+    }
+    .making__cards {
+        width: 290px;
+        height: 388px;
+        flex-direction: column;
+    }
+    .making__cards__v {
+        width: 290px;
+        height: 116px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .making__cards__text {
+        margin-top: 20px;
+    }
+    .making__folder {
+        width: 290px;
+        height: 615px;
+    }
+}

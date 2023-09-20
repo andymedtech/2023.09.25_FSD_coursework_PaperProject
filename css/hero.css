@@ -2,7 +2,7 @@
   max-width: 1440px;
   min-width: 320px;
   width: 100vw;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-top: none;
   border-bottom: none;
 }
@@ -15,7 +15,7 @@
 .hero__h2 {
   font-size: 60px;
   line-height: 60px;
-  color: #4C5866;
+  color: #4c5866;
 }
 
 .hero__p {
@@ -27,16 +27,16 @@
 .hero__btn {
   font-size: 20px;
   line-height: 23.44px;
-  color: #7875FE;
+  color: #7875fe;
   width: 255px;
   height: 70px;
   background-color: white;
-  border: 1px solid #7875FE;
+  border: 1px solid #7875fe;
 }
 
 .hero__btn:hover {
   color: white;
-  background-color: #7875FE;
+  background-color: #7875fe;
 }
 
 .hero__img {

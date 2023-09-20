@@ -1,8 +1,8 @@
-$header__color__border: #DDDDDD;
+$header__color__border: #dddddd;
 $header__color__logo: #333333;
 $header__color__background: white;
-$header__color__buttons: #4C5866;
-$header__color__avtive: #7875FE;
+$header__color__buttons: #4c5866;
+$header__color__active: #7875fe;
 
 header {
     max-width: 1440px;
@@ -86,7 +86,7 @@ header {
         }
         
         button:hover {
-            color: $header__color__avtive;
+            color: $header__color__active;
         }
     }
 

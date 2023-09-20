@@ -10,7 +10,7 @@ header {
   align-content: center;
   align-items: center;
   padding: 28px 0;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-bottom: none;
 }
 header .header__logo {
@@ -63,10 +63,10 @@ header .header__navigation button {
   height: 23px;
   border: none;
   background-color: white;
-  color: #4C5866;
+  color: #4c5866;
 }
 header .header__navigation button:hover {
-  color: #7875FE;
+  color: #7875fe;
 }
 header .header__buttons {
   justify-self: start;
@@ -104,7 +104,7 @@ header .header__buttons .header__buttons__log_in:hover {
     padding-bottom: 0;
     padding-left: 39px;
     padding-right: 35px;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
   }
   header .header__logo {
     justify-self: start;
@@ -116,7 +116,7 @@ header .header__buttons .header__buttons__log_in:hover {
     display: block;
     order: 2;
     grid-column: span 2;
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid #dddddd;
     margin-left: -39px;
     margin-right: -35px;
   }
