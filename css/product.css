@@ -3,6 +3,7 @@
   --product__head-color: #666666;
   --product__page-color: #85859b;
   --product__btn-color: #7875fe;
+  --product__border_color: #dddddd;
 }
 
 .product {
@@ -10,6 +11,7 @@
   min-width: 320px;
   width: 100vw;
   background-color: var(--product__background-color);
+  border: 1px solid var(--product__border_color);
   display: flex;
   justify-content: center;
   overflow: hidden;
