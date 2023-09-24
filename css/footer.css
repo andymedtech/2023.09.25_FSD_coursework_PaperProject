@@ -1,3 +1,133 @@
+:root {
+  --footer__background-color: #4C5866;
+  --footer__border_color: #dddddd;
+  --footer__separator_color: #dddddd;
+  --since__background-color: #ffffff;
+  --since__font-color: #4c5866;
+  --since__reg-color: #bcbcbc;
+  --logo__border-color: #ffffff;
+}
 
+footer {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100vw;
+  background-color: var(--footer__background-color);
+  border: 1px solid var(--footer__border_color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.basement {
+  width: 1110px;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.basement__logo {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  color: var(--logo__border-color);
+  border-bottom: none;
+}
+
+.basement__logo_dot {
+  width: 17px;
+  height: 17px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.basement__logo_dash {
+  width: 32px;
+  height: 17px;
+  border: 1px solid;
+  border-radius: 11px;
+}
+
+.basement__logo_text {
+  font-family: 'Font_Logo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22.98px;
+  width: 59px;
+  height: 23px;
+}
+
+.basement__social {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+
+.basement__social img {
+  width: 24px;
+  height: 24px;
+}
+
+.since {
+  width: 100vw;
+  min-width: 320px;
+  height: 21px;
+  background-color: var(--since__background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.since__frame {
+  width: 95px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.since__frame span {
+  font-size: 13px;
+  line-height: 15.23px;
+  color: var(--since__font-color);
+  text-transform: uppercase;
+}
+
+.since__frame span:nth-child(2) {
+  color: var(--since__reg-color);
+}
+
+@media (max-width: 1109px) {
+  .basement {
+    width: 690px;
+  }
+}
+@media (max-width: 689px) {
+  .basement {
+    width: 510px;
+  }
+}
+@media (max-width: 509px) {
+  .basement {
+    width: 290px;
+    height: 127px;
+    flex-wrap: wrap;
+  }
+
+  .basement__logo {
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid var(--footer__separator_color);
+  }
+
+  .basement__social {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */
